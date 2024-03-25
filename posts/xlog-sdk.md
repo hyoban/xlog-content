@@ -6,7 +6,7 @@ slug: xlog-sdk
 disableAISummary: false
 cover: ""
 tags:
-  - dev
+  - Coding
   - xLog
 ---
 

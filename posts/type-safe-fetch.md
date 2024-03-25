@@ -6,7 +6,7 @@ slug: type-safe-fetch
 disableAISummary: false
 cover: ""
 tags:
-  - dev
+  - Coding
 ---
 
 ## 前言

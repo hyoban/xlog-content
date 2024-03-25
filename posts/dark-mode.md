@@ -6,7 +6,7 @@ slug: dark-mode
 disableAISummary: false
 cover: ""
 tags:
-  - dev
+  - Coding
 ---
 
 ## 它会是什么样子

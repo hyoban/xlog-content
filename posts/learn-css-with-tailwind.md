@@ -6,7 +6,7 @@ slug: learn-css-with-tailwind
 disableAISummary: false
 cover: ""
 tags:
-  - dev
+  - Coding
 ---
 
 ## 如果你还不太懂 HTML 和 CSS

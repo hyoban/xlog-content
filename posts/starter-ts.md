@@ -6,7 +6,7 @@ slug: starter-ts
 disableAISummary: false
 cover: ""
 tags:
-  - dev
+  - Coding
 ---
 
 要全自己折腾的话，或许会陷入无尽的坑，所以我选择从 antfu 的 [starter-ts] 开始，按照自己的习惯进行一些改造。
