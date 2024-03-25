@@ -7,6 +7,7 @@ disableAISummary: false
 cover: ""
 tags:
   - dev
+  - xLog
 ---
 
 ## 为什么我们需要 xLog SDK？
