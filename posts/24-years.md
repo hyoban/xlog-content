@@ -6,7 +6,7 @@ slug: 24-years
 disableAISummary: true
 cover: ""
 tags:
-  - life
+  - Review
 ---
 
 > [!NOTE]

@@ -6,7 +6,7 @@ slug: work-one-year
 disableAISummary: false
 cover: ""
 tags:
-  - life
+  - Review
 ---
 
 ## 故事的开始
