@@ -17,16 +17,16 @@ tags:
 
 [TypeScript] 自不必多说，我使用 [ESLint] 来检查代码风格，用 [Prettier] 格式化代码。
 
-如果你和 prettier 的 `printWidth` 也做过斗争并且不能忍受的话，请看 [Why I don't use Prettier]，可能会喜欢用 eslint 来格式化代码，并且我们现在有了 [ESLint Stylistic] 这种开箱即用的配置。
+如果你和 prettier 的 `printWidth` 也做过斗争并且不能忍受的话，请看 [Why I don't use Prettier]，可能会喜欢用 ESLint 来格式化代码，并且我们现在有了 [ESLint Stylistic] 这种开箱即用的配置。
 
-要配置自己的 eslint config, 可以参考 antfu 的 [@antfu/eslint-config]。我自己的配置则不包含 ESLint Stylistic 的配置：
+要配置自己的 ESLint config, 可以参考 antfu 的 [@antfu/eslint-config]。我自己的配置则不包含 ESLint Stylistic 的配置：
 
 https://github.com/hyoban/eslint-config-hyoban
 
 我个人更偏向于用单独的格式化工具，原因如下：
 
-1. 我希望尽可能的开启一些需要类型检查的 eslint 规则，而它们一般会导致 lint 时间增加，影响开发时保存的体验。
-1. 这是 eslint，typescript-eslint 和 prettier 官方更推荐的做法。
+1. 我希望尽可能的开启一些需要类型检查的 ESLint 规则，而它们一般会导致 lint 时间增加，影响开发时保存的体验。
+1. 这是 [ESLint](https://eslint.org/blog/2023/10/deprecating-formatting-rules)，[typescript-eslint](https://typescript-eslint.io/blog/deprecating-formatting-rules) 和 [Prettier](https://prettier.io/docs/en/integrating-with-linters) 更推荐的做法。
 
 ### pnpm + bunchee + tsx + vitest
 
@@ -125,7 +125,7 @@ npx knip
 }
 ```
 
-不过这种方案存在的问题是，如果你的 eslint 配置发生了变化，那 commit 的代码依然可能存在需要修复的问题。所以我更倾向于在 CI 中进行检查。使用 [git-auto-commit-action] 来自动修复并 apply 到当前分支。这样还有一个好处是你不需要 require 其它贡献者完全设置好正确的环境。
+不过这种方案存在的问题是，如果你的 ESLint 配置发生了变化，那 commit 的代码依然可能存在需要修复的问题。所以我更倾向于在 CI 中进行检查。使用 [git-auto-commit-action] 来自动修复并 apply 到当前分支。这样还有一个好处是你不需要 require 其它贡献者完全设置好正确的环境。
 
 ## 发版流程
 
