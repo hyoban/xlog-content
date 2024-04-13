@@ -13,13 +13,20 @@ tags:
 
 ## 技术栈选择
 
-### TypeScript + ESLint
+### TypeScript + ESLint + Prettier
 
-[TypeScript] 自不必多说，我使用 [ESLint] 来检查代码风格并格式化代码，而不是使用 [Prettier]，想要了解更多请看 [Why I don't use Prettier]。如果你和 prettier 的 `printWidth` 也做过斗争并不能忍受的话，就会喜欢用 eslint 了，并且我们现在有了 [ESLint Stylistic] 这种开箱即用的配置。
+[TypeScript] 自不必多说，我使用 [ESLint] 来检查代码风格，用 [Prettier] 格式化代码。
 
-要配置自己的 eslint config, 可以参考 antfu 的 [@antfu/eslint-config]，或是我自的 eslint 配置。我的配置考虑是尽可能使用上游推荐的规则，按照自己的喜好和必要性开关一些特定的规则。
+如果你和 prettier 的 `printWidth` 也做过斗争并且不能忍受的话，请看 [Why I don't use Prettier]，可能会喜欢用 eslint 来格式化代码，并且我们现在有了 [ESLint Stylistic] 这种开箱即用的配置。
+
+要配置自己的 eslint config, 可以参考 antfu 的 [@antfu/eslint-config]。我自己的配置则不包含 ESLint Stylistic 的配置：
 
 https://github.com/hyoban/eslint-config-hyoban
+
+我个人更偏向于用单独的格式化工具，原因如下：
+
+1. 我希望尽可能的开启一些需要类型检查的 eslint 规则，而它们一般会导致 lint 时间增加，影响开发时保存的体验。
+1. 这是 eslint，typescript-eslint 和 prettier 官方更推荐的做法。
 
 ### pnpm + bunchee + tsx + vitest
 
