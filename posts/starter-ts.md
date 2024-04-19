@@ -15,7 +15,7 @@ tags:
 
 ### TypeScript + ESLint + Prettier
 
-[TypeScript] 自不必多说，我使用 [ESLint] 来检查代码风格，用 [Prettier] 格式化代码。
+[TypeScript] 自不必多说，我使用 [ESLint] 来检查代码风格和潜在的问题，用 [Prettier] 格式化代码。
 
 如果你和 prettier 的 `printWidth` 也做过斗争并且不能忍受的话，请看 [Why I don't use Prettier]，可能会喜欢用 ESLint 来格式化代码，并且我们现在有了 [ESLint Stylistic] 这种开箱即用的配置。
 
@@ -27,6 +27,11 @@ https://github.com/hyoban/eslint-config-hyoban
 
 1. 我希望尽可能的开启一些需要类型检查的 ESLint 规则，而它们一般会导致 lint 时间增加，影响开发时保存的体验。
 1. 这是 [ESLint](https://eslint.org/blog/2023/10/deprecating-formatting-rules)，[typescript-eslint](https://typescript-eslint.io/blog/deprecating-formatting-rules) 和 [Prettier](https://prettier.io/docs/en/integrating-with-linters) 更推荐的做法。
+
+我可能也会切换到使用 ESLint 来格式化代码：
+
+1. Prettier 的偏好在某些情况下会让我感到不适，特别是大多数行为都是无法配置的。
+1. 单独使用 ESLint 来完成多件事情让我这个强迫症感到很舒适。
 
 ### pnpm + bunchee + tsx + vitest
 
