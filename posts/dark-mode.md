@@ -23,7 +23,7 @@ tags:
 1. 用户偏好可以持久化到浏览器存储
 1. 用户偏好可以无感的恢复到系统偏好
 
-![ScreenShot 2024-01-04 19.10.00](ipfs://QmfRangKyDKxWxbUQ2uz5kvXnjhts1TxD8G7NuDKaQcAsE)
+![ScreenShot 2024-01-04 19.10.00](https://s2.loli.net/2024/04/21/ZyQXY2EUq5aphm3.gif)
 
 我会使用 [Jotai](https://jotai.org) 来实现，我喜欢 Jotai。
 
@@ -193,7 +193,7 @@ function RootLayout({ children }: { children: React.ReactNode }) {
 
 在 [Disable transitions on theme toggle](https://paco.me/writing/disable-theme-transitions) 一文中，已经十分详细的解释了这样做的原因。因为我们不希望在切换时部分组件的颜色过渡和页面主题的过渡节奏不一致。（Fixes 1-4）
 
-![transition demo](ipfs://QmeMmyYH1i17mjD6PZd6MxCZfuATuyTPcC1edTyddST28e)
+![transition demo](https://paco.me/img/disable-theme-transitions/before.gif)
 
 这很好，但是我们的主题切换按钮有用到 `transition`，我们需要能给部分组件开白名单，可以使用 css 的 [\:not](https://developer.mozilla.org/en-US/docs/Web/CSS/:not) 伪类来实现。
 

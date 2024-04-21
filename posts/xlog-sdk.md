@@ -56,25 +56,11 @@ const site = = await client.site.getInfo(HANDLE)
 
 sakuin 是从我的博客项目衍生出来的，所以很自然的我使用它来构建[自己的博客](https://hyoban.cc)，你可以对比它和原版 xLog 的访问速度。此外，我按照自己的喜好重新实现了布局和文章的渲染，我拥有了完全可控的自由度。对接 xLog 提供的匿名评论接口，我可以轻松的实现评论模块。
 
-![评论界面截图](ipfs://QmXj158q41HLWyzgF5AHwJKUpxtLa2MijVThZGvXvCz9dS)
+![评论界面截图](https://s2.loli.net/2024/03/19/UFNHbaBGdvz5Zmj.png)
 
 https://github.com/hyoban/vscode-xlog
 
-VS Code xLog 插件，通过这个插件，你可以下载全部的博客文章到本地，在本地编辑或创建你的博客。
-
-<video>
-  <source src="ipfs://QmZJwVQqjXgczYxPAkjnBRn7wtcdTd1wjvGH4YkoRnwbUy" />
-</video>
-
-<video>
-  <source src="ipfs://QmY7dbT8TWnvGVvYVUTXK638BK9mwpdGJuzGfME2kTGxE6" />
-</video>
-
-你同样也可以在 VS Code 中上传本地文件或是远端链接文件到 IPFS。
-
-<video>
-  <source src="ipfs://QmQJBmHZGyu1gm8dNCcwjBRqDWQbWL1GCdHhS4Zvu8XmCp" />
-</video>
+VS Code xLog 插件，通过这个插件，你可以下载全部的博客文章到本地，在本地编辑或创建你的博客。你同样也可以在 VS Code 中上传本地文件或是远端链接文件到 IPFS。
 
 ## 一些展望
 

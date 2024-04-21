@@ -219,7 +219,7 @@ class CustomError<T extends string> extends Error {
 
 nice，让我们来看看使用效果吧。
 
-![ScreenShot 2023-08-09 12.38.53.gif](ipfs://bafybeigplcfm36g3lapuamylfwmiiuhyxanfisc5yohthajaf4vk2ncfay)
+![ScreenShot 2023-08-09 12.38.53.gif](https://s2.loli.net/2023/08/09/7LaBo5QqRWFAHVm.gif)
 
 ## 最后
 

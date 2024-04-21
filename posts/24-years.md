@@ -21,7 +21,7 @@ tags:
 我十分喜欢 xLog 这个平台，并将其作为我的主要博客站点。在使用过程中我偶尔会遇到一些小问题，或是自己想要一些小功能，就把代码拿过来改一改提 PR。
 比如在通过浏览器使用在线编辑器来写博客时，我发现编辑和预览区域所占的宽度太小，编辑体验不佳，就增加了专注模式。现在开启专注模式，就可以使得页面全屏，同时隐藏与编辑区无关的元素。
 
-![Focus Mode demo](ipfs://QmXQUmLeyc9xurpa7LGri6AtX1Yfc916ttkdKb8KbDuZSK)
+![Focus Mode demo](https://s2.loli.net/2023/10/07/L9YEJSs1jwClNR3.png)
 
 又比如 `Callout` 在很多站点生成器（如 VitePress）都是内置的语法，因此我就找了个 remark 插件支持了一下，现在你可以使用如下的写法来渲染一个 `Callout`。
 
