@@ -1,6 +1,11 @@
 ---
 title: 为什么是 ESLint
+datePublishedAt: 2024-05-17T16:14:11.183Z
+summary: ""
+slug: why-eslint
+disableAISummary: false
 cover: https://s2.loli.net/2024/05/18/yurztpFRmHEYQGT.png
+tags: []
 ---
 
 ## 前言
