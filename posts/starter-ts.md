@@ -15,23 +15,11 @@ tags:
 
 ### TypeScript + ESLint + Prettier
 
-[TypeScript] 自不必多说，我使用 [ESLint] 来检查代码风格和潜在的问题，用 [Prettier] 格式化代码。
+[TypeScript] 自不必多说，我使用 [ESLint] 来检查和格式化代码。
 
-如果你和 prettier 的 `printWidth` 也做过斗争并且不能忍受的话，请看 [Why I don't use Prettier]，可能会喜欢用 ESLint 来格式化代码，并且我们现在有了 [ESLint Stylistic] 这种开箱即用的配置。
+如果你和 [Prettier] 的 `printWidth` 也做过斗争并且不能忍受的话，请看 [Why I don't use Prettier]，可能会喜欢用 ESLint 来格式化代码，并且我们现在有了 [ESLint Stylistic] 这种开箱即用的配置。
 
-要配置自己的 ESLint config, 可以参考 antfu 的 [@antfu/eslint-config]。我自己的配置则不包含 ESLint Stylistic 的配置：
-
-https://github.com/hyoban/eslint-config-hyoban
-
-我个人更偏向于用单独的格式化工具，原因如下：
-
-1. 我希望尽可能的开启一些需要类型检查的 ESLint 规则，而它们一般会导致 lint 时间增加，影响开发时保存的体验。
-1. 这是 [ESLint](https://eslint.org/blog/2023/10/deprecating-formatting-rules)，[typescript-eslint](https://typescript-eslint.io/blog/deprecating-formatting-rules) 和 [Prettier](https://prettier.io/docs/en/integrating-with-linters) 更推荐的做法。
-
-我可能也会切换到使用 ESLint 来格式化代码：
-
-1. Prettier 的偏好在某些情况下会让我感到不适，特别是大多数行为都是无法配置的。
-1. 单独使用 ESLint 来完成多件事情让我这个强迫症感到很舒适。
+要了解更多，请查看 [为什么是 ESLint](https://hyoban.xlog.app/why-eslint)。
 
 ### pnpm + bunchee + tsx + vitest
 
@@ -42,7 +30,7 @@ ignore-workspace-root-check=true
 public-hoist-pattern=[]
 ```
 
-使用 [bunchee] 来完成打包任务，它读取 package.json 中的 `exports` 字段作为打包的输入输出，无需手动指定配置。
+使用 [bunchee] 来完成打包任务，它读取 package.json 中的 `exports` 字段作为打包的输入输出，无需手动指定配置。此外它的 esm 打包结果看起来也更好，tsup 存在 [ESM output with CJS content](https://github.com/egoist/tsup/issues/701) 的问题。
 
 如果你希望更清楚精细的控制打包流程，可以使用 [rollup] 配合一些插件来自己写配置。这里有一些常用的插件推荐。
 
@@ -51,7 +39,7 @@ public-hoist-pattern=[]
 1. [@rollup/plugin-node-resolve]
 1. [@rollup/plugin-commonjs]
 
-如果你想看看类似 bunchee 的其它选择，可以看看 [unbuild] 和 [tsup]
+如果你想看看类似 bunchee 的其它选择，可以看看 [unbuild] 和 [tsup]。tsup 的 `--dts-resolve` 选项在你想要打包一些依赖的时候很有用。
 
 开发过程中，非必要的情况下，基本上没人想先打包再跑代码。因此，我使用 [tsx] 来直接执行 ts 文件，用 [vitest] 来测试代码。
 
@@ -185,7 +173,6 @@ https://github.com/hyoban/starter-ts
 [Why I don't use Prettier]: https://antfu.me/posts/why-not-prettier
 [Prettier]: https://github.com/prettier/prettier
 [ESLint Stylistic]: https://eslint.style/
-[@antfu/eslint-config]: https://github.com/antfu/eslint-config
 [moduleResolution 总结]: https://juejin.cn/post/7221551421833314360
 [bumpp]: https://github.com/antfu/bumpp
 [changelogithub]: https://github.com/antfu/changelogithub
