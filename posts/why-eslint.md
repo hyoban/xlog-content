@@ -5,7 +5,9 @@ summary: ""
 slug: why-eslint
 disableAISummary: false
 cover: https://s2.loli.net/2024/05/18/yurztpFRmHEYQGT.png
-tags: []
+tags:
+  - Coding
+  - ESLint
 ---
 
 ## 前言
@@ -81,6 +83,10 @@ oxlint 最近进行了尝试，但是这似乎也导致了它回到了 JavaScrip
 
 https://x.com/boshen_c/status/1783632651506823204
 
+Biome 开始准备实现 Type-aware linter。
+
+https://x.com/biomejs/status/1800858872896487889
+
 ## 我不那么在乎的 ESLint 的“缺点”
 
 ### 性能
@@ -94,8 +100,7 @@ https://x.com/boshen_c/status/1783632651506823204
 对于我自己的 ESLint Config，可以使用如下的配置。
 
 ```js
-// @ts-check
-import hyoban from "eslint-config-hyoban";
+import defineConfig from "eslint-config-hyoban";
 
 const isInEditor = !!(
   (process.env.VSCODE_PID ||
@@ -105,7 +110,7 @@ const isInEditor = !!(
   !process.env.CI
 );
 
-export default hyoban({
+export default defineConfig({
   typeChecked: isInEditor ? false : "essential",
 });
 ```
@@ -128,10 +133,12 @@ API 的 breaking change 带来的问题也可以通过多种方式来解决：
 
 ## 结语
 
+需要再次强调的是，这只是我的个人感受和观点，它可能存在考虑得不对的地方，欢迎你和我交流，也欢迎你分享你的观点。
+
 如果你现在想要尝试 ESLint All In One 的话，我十分推荐你从 Anthony Fu 的 ESLint config 起手，它支持非常多的语言和框架，你也可以在其基础之上灵活的进行配置。
 
 https://github.com/antfu/eslint-config
 
-如果你主要写 TypeScript 和 React 的话，也推荐你使用我的 ESLint config 试试。
+如果你主要写 TypeScript 和 React 的话，也推荐你使用我的 ESLint config 试试。我配置规则的哲学是尽可能使用插件预设的规则，在此基础上按照我的习惯进行调整，同时提供 `strict` 和 `typeChecked` 选项进行不同级别的调整。
 
 https://github.com/hyoban/eslint-config-hyoban
