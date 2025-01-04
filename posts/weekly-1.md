@@ -4,7 +4,7 @@ datePublishedAt: 2025-01-04T14:05:49.237Z
 summary: ""
 slug: weekly-1
 disableAISummary: false
-cover: ipfs://Qme2CwhdLbeHg8oaQwtBPsQDsxYu54pUafVsNQp4MezF6z
+cover: https://s2.loli.net/2025/01/04/mXY4BExsH6NCOLQ.png
 tags:
   - NAS
 ---
