@@ -115,6 +115,10 @@ export default defineConfig({
 });
 ```
 
+你也可以尝试一下 tsslint，它是一个与 TypeScript 语言服务器无缝集成的轻量级检查工具。
+
+https://github.com/johnsoncodehk/tsslint
+
 ### 非官方推荐
 
 ESLint 和 typescript-eslint 官方都决定 [废弃格式化代码相关的规则](https://eslint.org/blog/2023/10/deprecating-formatting-rules/)，同时他们并 [不推荐使用 ESLint 来进行格式化](https://typescript-eslint.io/troubleshooting/formatting)，而是推荐配合 Prettier 等格式化工具来使用。但实际上我并不觉得这是一个问题，废弃这些规则并将其转到社区来维护实际上是个好事，我们现在有 [ESLint Stylistic](https://eslint.style) 这样的开箱即用的工具，并且它表现的非常好。
