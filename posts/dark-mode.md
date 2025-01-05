@@ -3,7 +3,7 @@ title: 实现一个满意的深色模式切换按钮
 datePublishedAt: 2024-01-04T13:15:06.994Z
 summary: ""
 slug: dark-mode
-disableAISummary: false
+disableAISummary: true
 cover: ""
 tags:
   - Coding

@@ -3,7 +3,7 @@ title: 远程兼职一年后
 datePublishedAt: 2023-07-09T16:00:00.000Z
 summary: 不知不觉，我已经工作一年了。回想起来，有些东西是值得被记录下来的。
 slug: work-one-year
-disableAISummary: false
+disableAISummary: true
 cover: ""
 tags:
   - Review

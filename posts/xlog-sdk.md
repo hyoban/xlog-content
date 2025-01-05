@@ -3,7 +3,7 @@ title: xLog SDK 的一些进展
 datePublishedAt: 2024-03-19T09:51:53.710Z
 summary: ""
 slug: xlog-sdk
-disableAISummary: false
+disableAISummary: true
 cover: ""
 tags:
   - Coding

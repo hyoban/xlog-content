@@ -3,7 +3,7 @@ title: 我如何开始写一个 TypeScript 库
 datePublishedAt: 2024-02-15T07:14:39.208Z
 summary: ""
 slug: starter-ts
-disableAISummary: false
+disableAISummary: true
 cover: ""
 tags:
   - Coding

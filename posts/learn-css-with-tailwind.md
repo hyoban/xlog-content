@@ -3,7 +3,7 @@ title: 你可以用 Tailwind 来学习 CSS
 datePublishedAt: 2023-08-16T13:06:42.431Z
 summary: ""
 slug: learn-css-with-tailwind
-disableAISummary: false
+disableAISummary: true
 cover: ""
 tags:
   - Coding

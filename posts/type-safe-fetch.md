@@ -3,7 +3,7 @@ title: 如何让 fetch 变得类型安全
 datePublishedAt: 2023-08-09T04:56:48.915Z
 summary: 总所周知，发网络请求传递参数和获取返回值时只能凭感觉，但是我们可以做一点类型体操来解决这个问题
 slug: type-safe-fetch
-disableAISummary: false
+disableAISummary: true
 cover: ""
 tags:
   - Coding
