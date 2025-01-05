@@ -7,6 +7,7 @@ disableAISummary: false
 cover: https://s2.loli.net/2025/01/04/mXY4BExsH6NCOLQ.png
 tags:
   - NAS
+  - Weekly
 ---
 
 买了很早就想买的 NAS，现在只后悔买的晚了。由于不熟悉 NAS，我问了一些人给我推荐型号。结果每个人推荐的都不一样，给我纠结了很久。最后选的是比较基础款的绿联的 dxp4800，想着先用用看，结果发现还挺好的。

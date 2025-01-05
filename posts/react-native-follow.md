@@ -3,7 +3,7 @@ title: "Re: 从零开始的 React Native 之旅"
 datePublishedAt: 2024-07-21T16:48:51.143Z
 summary: ""
 slug: react-native-follow
-disableAISummary: false
+disableAISummary: true
 cover: ""
 tags:
   - Coding
